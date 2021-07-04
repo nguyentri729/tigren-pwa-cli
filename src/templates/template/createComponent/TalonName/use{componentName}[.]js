@@ -1,0 +1,31 @@
+import React from 'react';
+import { useQuery, useMutation } from '@apollo/client';
+import { useAwaitQuery } from '@magento/peregrine/lib/hooks/useAwaitQuery';
+import mergeOperations from '@magento/peregrine/lib/util/shallowMerge';
+
+import DEFAULT_OPERATIONS from './{tgpwa_file_name}.gql';
+
+export const use{tgpwa_component_name} = props => {
+
+    const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);
+
+    const [doSomethings, { error }] = useMutation(
+        defaultMutaion
+    );
+
+    const [querySomethings, {error, loading, refetch}] = useQuery({
+        variables: {
+
+        }
+    })
+
+    const fetchSomethings = useAwaitQuery(defaultQuery);
+
+
+
+
+
+    return {
+
+    };
+};

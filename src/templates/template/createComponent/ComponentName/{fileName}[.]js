@@ -1,0 +1,24 @@
+import React  from 'react';
+
+import { FormattedMessage } from 'react-intl';
+import { mergeClasses } from '@magento/venia-ui/lib/classify';
+
+// Talons
+import use{tgpwa_component_name} from '@tigrensolutions/core/src/talons/{tgpwa_component_name}/use{tgpwa_component_name}';
+
+// Style
+import defaultClasses from './{tgpwa_file_name}.css';
+
+const {tgpwa_component_name} = props => {
+    const classes = mergeClasses(defaultClasses, props.classes);
+
+    const talonProps = use{tgpwa_component_name}();
+
+    return (
+        <div className={classes.root}>
+
+        </div>
+    );
+};
+
+export default {tgpwa_component_name};

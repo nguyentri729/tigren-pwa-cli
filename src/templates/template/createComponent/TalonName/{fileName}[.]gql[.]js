@@ -1,0 +1,12 @@
+import { gql } from '@apollo/client';
+
+export const DEFAULT_QUERY = gql`
+    
+    
+`;
+
+
+
+export default {
+    defaultQuery: DEFAULT_QUERY
+};

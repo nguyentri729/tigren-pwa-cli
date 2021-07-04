@@ -1,0 +1,25 @@
+{
+    "name": "@nguyentri729/tigren-pwa-cli",
+    "version": "1.0.0",
+    "description": "A CLI to pwa-studio",
+    "main": "src/index.js",
+    "bin": {
+        "@nguyentri729/tigren-pwa": "bin/tigren-pwa",
+        "tigren-pwa": "bin/tigren-pwa"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "cli",
+        "tigren-pwa"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "arg": "^5.0.0",
+        "esm": "^3.2.25",
+        "fs-extra": "^10.0.0",
+        "inquirer": "^8.1.1",
+        "lodash": "^4.17.21"
+    }
+}
